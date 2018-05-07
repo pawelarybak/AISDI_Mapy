@@ -10,12 +10,10 @@
 #include <algorithm>
 #include <stdexcept>
 
-namespace aisdi
-{
+namespace aisdi {
 
     template <typename KeyType, typename ValueType>
-    class HashMap
-    {
+    class HashMap {
         static const int MAP_SIZE = 11;
 
     public:

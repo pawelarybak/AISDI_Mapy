@@ -12,13 +12,12 @@ namespace
 {
 
     template <typename K, typename V>
-    using Map = aisdi::HashMap<K, V>;
+    using Map = aisdi::TreeMap<K, V>;
 
     void perfomTest()
     {
-        const Map<int, std::string> map;
-
-        std::cout << map.valueOf(5) << std::endl;
+        Map<int, std::string> map = { { 753, "Rome" } };
+        map.remove(753);
     }
 
 } // namespace
